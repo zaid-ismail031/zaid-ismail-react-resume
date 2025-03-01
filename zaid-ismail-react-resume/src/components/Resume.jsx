@@ -3,7 +3,7 @@ const Resume = () => {
     <>
     <div className="w-full text-3xl text-center mb-4">
       <a 
-        href="/path-to-your-resume.pdf" 
+        href="./docs/Zaid_Ismail_CV.pdf" 
         download 
         className="bg-green-700 hover:bg-green-500 text-black font-bold py-2 px-4 transition-all"
       >
