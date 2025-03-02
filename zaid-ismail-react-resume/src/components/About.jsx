@@ -12,10 +12,10 @@ const About = () => {
     "[ OK ] Running diagnostics...",
     "[ OK ] System ready.",
     "Enter Zaid Ismail's website",
-    "#############################################",
+    "###################",
     "Check out my GitHub:", 
     "https://github.com/zaidismail",
-    "#############################################",
+    "###################",
     "And my LinkedIn:", 
     "https://www.linkedin.com/in/zaid-ismail-0957a61b1/"
   ];
