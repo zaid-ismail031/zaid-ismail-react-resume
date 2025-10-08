@@ -14,7 +14,7 @@ const About = () => {
     "Enter Zaid Ismail's website",
     "###################",
     "Check out my GitHub:", 
-    "https://github.com/zaidismail",
+    "https://github.com/zaid-ismail031",
     "###################",
     "And my LinkedIn:", 
     "https://www.linkedin.com/in/zaid-ismail-0957a61b1/"
