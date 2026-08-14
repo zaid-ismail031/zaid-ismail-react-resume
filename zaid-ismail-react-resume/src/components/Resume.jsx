@@ -16,7 +16,7 @@ const Resume = () => {
         <h2 className="text-3xl font-bold text-green-400 mb-4 text-glow">Work Experience</h2>
         
         <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-green-300">Intermediate Software Developer</h3>
+          <h3 className="text-2xl font-semibold text-green-300">Software/Unity Developer</h3>
           <p className="text-green-500 flex justify-between italic text-lg">
             <span>ThoroughTec Simulation</span>
             <span className="text-right">Jan 2023 - Present</span>
@@ -85,6 +85,20 @@ const Resume = () => {
       <div className="w-full md:w-1/2 p-6 border border-green-300">
         <h2 className="text-3xl font-bold text-green-400 mb-4 text-glow">Education</h2>
         
+        <div className="mb-6">
+          <h3 className="text-2xl font-semibold text-green-300">Master of Science, Artificial Intelligence for Games</h3>
+          <p className="text-green-500 flex justify-between italic text-lg">
+            <span>University of the Witwatersrand</span>
+            <span className="text-right">Jan 2026 - Dec 2028</span>
+          </p>
+          <ul className="list-disc list-inside text-green-400 mt-2 space-y-1">
+            <li>A specialized Computer Science Master's degree focused on AI implementations within videogames.</li>
+            <li>These AI implementations explore both classical and machine-learning based AI techniques to enhance
+              NPC behaviour, procedural content generation, player experience (dynamic difficulty adjustment), graphics implementations ala. DLSS/FSR etc.
+            </li>
+          </ul>
+        </div>
+
         <div className="mb-6">
           <h3 className="text-2xl font-semibold text-green-300">Bachelor of Science in Engineering (Honours), Civil Engineering</h3>
           <p className="text-green-500 flex justify-between italic text-lg">
