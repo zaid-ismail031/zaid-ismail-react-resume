@@ -1,6 +1,17 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
+  {
+    title: "Squad AI Shooter (Unity, C#)",
+    image: "./images/unitygame.png",
+    playPath: "/game",
+    description: [
+      "Third-person shooter built in Unity 6, playable in the browser via WebGL.",
+      "NPCs are driven by a custom behaviour tree with squad-level coordination: flanking, retreating, healing allies, and taking cover.",
+      "Uses Cinemachine for camera work and Unity's NavMesh for pathfinding.",
+    ],
+  },
   {
     title: "OpenGL 3D Graphics Engine (C++)",
     image: "./images/opengl.png",
@@ -104,6 +115,15 @@ const Carousel = () => {
           </li>
         ))}
       </ul>
+
+      {projects[currentIndex].playPath && (
+        <Link
+          to={projects[currentIndex].playPath}
+          className="inline-block mt-6 px-6 py-2 border border-green-400 hover:bg-green-400 hover:text-black transition"
+        >
+          ▶ Play in browser
+        </Link>
+      )}
     </div>
   );
 };

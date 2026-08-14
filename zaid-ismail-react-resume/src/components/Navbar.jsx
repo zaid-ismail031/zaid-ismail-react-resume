@@ -27,6 +27,9 @@ const Navbar = () => {
                     <NavLink to='/portfolio' className={linkClass}>
                       Portfolio
                     </NavLink>
+                    <NavLink to='/game' className={linkClass}>
+                      Play My Game
+                    </NavLink>
                   </div>
                 </div>
               </div>
