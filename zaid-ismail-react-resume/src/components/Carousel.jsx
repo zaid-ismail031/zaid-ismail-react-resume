@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "Squad AI Shooter (Unity, C#)",
+    title: "NPC AI and Procedural Generation Tech Demo (Unity)",
     image: "./images/unitygame.png",
     playPath: "/game",
     description: [
-      "Third-person shooter built in Unity 6, playable in the browser via WebGL.",
-      "NPCs are driven by a custom behaviour tree with squad-level coordination: flanking, retreating, healing allies, and taking cover.",
-      "Uses Cinemachine for camera work and Unity's NavMesh for pathfinding.",
+      "This is a rough tech demo showing off my implementations of behaviour trees, procedural dungeon and terrain generation, and procedural narrative generation.",
+      "The procedural narrative generation uses word tables to generate quests, character names, and environmental notes."
     ],
   },
   {
