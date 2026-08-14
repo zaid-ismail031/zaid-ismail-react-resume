@@ -2,8 +2,10 @@ import { useRef, useState } from "react";
 
 // The Unity WebGL build is served as static files from public/game-build/.
 // BASE_URL keeps this correct if the site is ever deployed under a sub-path.
-// Request the directory, not index.html — `serve` rewrites .html URLs by default.
-const gameUrl = `${import.meta.env.BASE_URL}game-build/`;
+// Must be the explicit index.html path: `serve -s` rewrites bare directory
+// requests to the SPA root. Relies on "cleanUrls": false in public/serve.json,
+// otherwise serve 301s this to /game-build/index and the SPA fallback wins.
+const gameUrl = `${import.meta.env.BASE_URL}game-build/index.html`;
 
 const GamePage = () => {
   const frameWrapper = useRef(null);
@@ -41,7 +43,7 @@ const GamePage = () => {
           >
             <span className="text-2xl">▶ Click to load</span>
             <span className="text-green-300 text-xs px-6">
-              Loads a large WebGL build; give it a moment on first run.
+              Loads a large WebGL build. Give it a moment on first run.
             </span>
           </button>
         )}
@@ -67,7 +69,7 @@ const GamePage = () => {
       <ul className="text-left text-sm mx-auto w-3/4 mt-8 space-y-2 text-green-300">
         <li>▶ Controls: WASD to move, mouse to look, right-click to aim, left-click to fire.</li>
         <li>▶ Tab cycles between the available cameras.</li>
-        <li>▶ Desktop browser and keyboard required; touch input is not supported.</li>
+        <li>▶ Desktop browser and keyboard required. Touch input is not supported.</li>
       </ul>
     </div>
   );
