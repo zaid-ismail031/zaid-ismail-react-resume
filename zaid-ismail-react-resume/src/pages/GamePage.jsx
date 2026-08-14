@@ -23,6 +23,10 @@ const GamePage = () => {
       <p className="text-green-300 text-sm mb-6">
         Third-person shooter with behaviour-tree driven squad AI. Runs in the
         browser via WebGL.
+        This is a rough tech demo showing off my implementations of behaviour trees, 
+        procedural dungeon and terrain generation, and procedural narrative generation.
+        The procedural narrative generation uses word tables to generate quests,
+        character names, and environmental notes.
       </p>
 
       <div
