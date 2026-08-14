@@ -18,7 +18,7 @@ const GamePage = () => {
   return (
     <div className="w-full max-w-5xl mx-auto text-center p-8 min-h-screen bg-black text-green-400 font-mono">
       <h2 className="text-3xl font-bold mb-2 text-glow">
-        Squad AI Shooter (Unity)
+        NPC AI and Procedural Generation Tech Demo (Unity)
       </h2>
       <p className="text-green-300 text-sm mb-6">
         Third-person shooter with behaviour-tree driven squad AI. Runs in the
@@ -27,6 +27,8 @@ const GamePage = () => {
         procedural dungeon and terrain generation, and procedural narrative generation.
         The procedural narrative generation uses word tables to generate quests,
         character names, and environmental notes.
+
+        The Unity project can be viewed at https://github.com/zaid-ismail031/PortfolioProject/
       </p>
 
       <div
